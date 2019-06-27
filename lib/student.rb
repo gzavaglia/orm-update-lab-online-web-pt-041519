@@ -59,7 +59,7 @@ class Student
  end
  
  def self.new_from_db(row)
-   student = self.create(row[1], row[2], row[3])
+   student = self.create(row[1], row[2], row[0])
  end
  
 end
