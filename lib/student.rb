@@ -32,7 +32,7 @@ class Student
  
  def save
    sql = <<-SQL
-      INSERT INTO IF NOT EXISTS students (name, grade) 
+      INSERT INTO students (name, grade) IF NOT EXISTS
       VALUES (?, ?)
     SQL
 
